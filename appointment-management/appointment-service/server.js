@@ -10,7 +10,7 @@ const port = 8090; // You can choose any port that is free
 
 app.use(bodyParser.json());
 
-// Sync Sequelize models
+// Sync sequelize models
 Appointment.sequelize.sync().then(() => {
     console.log(`Database & tables created!`);
 });
